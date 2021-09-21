@@ -1,0 +1,100 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.nav_brand {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 145%;
+  /* identical to box height, or 35px */
+  color: #000000;
+}
+
+.nav_links_container a {
+  font-size: 17px;
+  line-height: 150%;
+  color: #000000;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 24px;
+  text-decoration: none;
+  padding-bottom: 2px;
+}
+
+.nav_links_container a:hover {
+  border-bottom: 2px solid #E16259;
+}
+
+.hero {
+  display: flex;
+  width: 996px;
+  margin: 0 auto;
+  padding-top: 80px;
+  gap: 24px;
+}
+
+.hero_title {
+  font-size: 69px;
+  letter-spacing: -1.85px;
+  padding-right: 20px;
+  margin: 0;
+}
+
+.hero_text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero_paragraph {
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.card_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card_subtitle {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  line-height: 150%;
+  margin-bottom: 4px;
+}
+
+.card_title {
+  font-size: 22px;
+  line-height: 135%;
+  margin: 0 0 8px 0;
+}
+
+.college_link {
+  color: #E16259;
+  font-size: 15px;
+  line-height: 150%;
+}
+
+.card {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  flex: 1 0 calc(25% - 24px);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.card:hover {
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.3);  
+}

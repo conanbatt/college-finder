@@ -1,0 +1,45 @@
+.search_input {
+  border: 2px solid #EEEEEE;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 16px;
+  width: 384px;
+}
+.search_input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.college_item {
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  flex-shrink: 1;
+}
+
+.college_item:hover {
+  background:rgba(0, 0, 0, 0.1);
+}
+
+.search_container {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.light_text {
+  color: rgba(0, 0, 0, 0.6);
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.college_item_name {
+  font-size: 14px;
+}
+
+.search_results_container {
+  border: 2px solid #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  width: 384px;
+  position: absolute;
+  background: white;
+}
