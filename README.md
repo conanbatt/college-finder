@@ -4,6 +4,8 @@ I've developed this project with Next.js and the applicatio nis live on https://
 
 This solution is "quick and dirty" given the prompt of working about 2 hours on it. The task simplicity however does not ask for much more complexity, so a short run around key decisions:
 
+## Notable decisions
+
 **Next.js**: I find next.js a more powerful framework than create-react-app for its SSR and ISR (a topic I gave a public talk about [here|https://www.youtube.com/watch?v=eXxrz4BiqSM&list=PLf9R1sIea3m2K5RkJD6zPnP0Q1t0iBs_s&index=32]
 
 **Mobile responsiveness**: For the sake of simplicity I made the design responsive only on two sizes (below and above 996px). Several techniques and decisions on how to organize the content are displayed.
