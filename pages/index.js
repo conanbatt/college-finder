@@ -28,7 +28,7 @@ export default function Home({ data }) {
               <p className={styles.hero_paragraph}>Tenetur ex explicabo et illo. Recusandae fugit eius voluptatem. Voluptas atque autem totam.</p>
             </div>
             <div>
-              <img src="/mountain_dude.png" />
+              <img alt="mountain dude" src="/mountain_dude.png" />
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ export default function Home({ data }) {
 const Card = ({ college }) => {
   const [_, name, city, state, website] = college
   return (
-    <a href={`https://${website}`} className={styles.card} target="_blank">
+    <a href={`https://${website}`} className={styles.card} target="_blank" rel="noreferrer">
       <div className={styles.card_subtitle}>
         {city} · {state}
       </div>

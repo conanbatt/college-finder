@@ -4,10 +4,12 @@
   border-radius: 4px;
   padding: 12px 16px;
   width: 384px;
+  outline-color: #E16259;
 }
 .search_input::placeholder {
   color: rgba(0, 0, 0, 0.4);
 }
+
 
 .college_item {
   padding: 10px;

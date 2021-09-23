@@ -18,7 +18,7 @@ export const Search = () => {
     fetchData()
       .then(res => {
         // A better idea would be to cache results and to do filtering server side. Doable in this next.js setup!
-        const filtered = res.filter(([_,name]) => name.toLowerCase().includes(query.toLowerCase()))
+        const filtered = res.filter(([_,name]) => name.toLowerCase().includes(debouncedQuery.toLowerCase()))
         setResults(filtered)
       })
   }, [debouncedQuery])
@@ -59,7 +59,7 @@ export const Search = () => {
 const ResultItem = ({ college }) => {
   const [_, name, city, state, website] = college
   return (
-    <a href={`http://${website}`} className={styles.college_item} target="_blank">
+    <a href={`http://${website}`} className={styles.college_item} target="_blank" rel="noreferrer">
       <div>
         <span className={styles.light_text}>{city} · {state}</span>
         <span className={styles.college_item_name}>{name}</span>
