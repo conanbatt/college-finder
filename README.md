@@ -12,7 +12,7 @@ This solution is "quick and dirty" given the prompt of working about 2 hours on 
 
 **Mobile responsiveness**: For the sake of simplicity I made the design responsive only on two sizes (below and above 996px). Several techniques and decisions on how to organize the content are displayed.
 
-**Accesibility**: links and buttons are implemented with anchors for browser-default navigation, and lint/a11y practices like adding alt on images provided
+**Accesibility**: links and buttons are implemented with anchors for browser-default navigation, and lint/a11y practices like adding alt on images provided. More semanting HTML could be used to improve SEO and readability, like main/footer tags, or article components. They provide marginal benefits for this problem.
 
 **Search**: There was no design req for search, and it was not clear to me if the search was meant to be a filter or a global search bar. I implemented the latter, including debounce and some events to open/close results. 
 
