@@ -27,8 +27,8 @@ export default function Home({ data }) {
               <h1 className={styles.hero_title}>Find the university that’s right for you.</h1>
               <p className={styles.hero_paragraph}>Tenetur ex explicabo et illo. Recusandae fugit eius voluptatem. Voluptas atque autem totam.</p>
             </div>
-            <div>
-              <img alt="mountain dude" src="/mountain_dude.png" />
+            <div className={styles.hero_image_container}>
+              <img className={styles.hero_image} alt="mountain dude" src="/mountain_dude.png" />
             </div>
           </div>
         </div>

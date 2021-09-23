@@ -45,3 +45,15 @@
   position: absolute;
   background: white;
 }
+
+@media (max-width: 996px) {
+  .search_input {
+    width: 100%;
+    margin: 0 10px;
+  }
+  .search_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
