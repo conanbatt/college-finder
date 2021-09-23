@@ -1,4 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# YourUni
+
+I've developed this project with Next.js and the applicatio nis live on https://college-finder.vercel.app/. Instrucions on how to run the app are given at the bottom through Next.js default documentation.
+
+This solution is "quick and dirty" given the prompt of working about 2 hours on it. The task simplicity however does not ask for much more complexity, so a short run around key decisions:
+
+**Next.js**: I find next.js a more powerful framework than create-react-app for its SSR and ISR (a topic I gave a public talk about [here|https://www.youtube.com/watch?v=eXxrz4BiqSM&list=PLf9R1sIea3m2K5RkJD6zPnP0Q1t0iBs_s&index=32]
+
+**Mobile responsiveness**: For the sake of simplicity I made the design responsive only on two sizes (below and above 996px). Several techniques and decisions on how to organize the content are displayed.
+
+**Accesibility**: links and buttons are implemented with anchors for browser-default navigation, and lint/a11y practices like adding alt on images provided
+
+**Search**: There was no design req for search, and it was not clear to me if the search was meant to be a filter or a global search bar. I implemented the latter, including debounce and some events to open/close results. 
+
+**API**: I thought of adding a server-side api endpoint to parse CSV results, but the provided endpoint worked unrestrictedly for either search use cases or initial loading. A lot of options are available to improve performance and reliability here: caching in the server, caching in the client, cached-proxy, etc. For time constraints I just used the same endpoint over and over.
+
+**GetInitialProps**: This is a unique feature of Next.js that means the page is generated once at build time and served with the request already made. This makes it really fast to load the page and skip any loading states. However this also means the results go stale, and we would want to active [ISR]|(https://vercel.com/docs/concepts/next.js/incremental-static-regeneration) for it.
+
+**CSS**: Using default css modules. The project is not large enough to decide on a pattern for reusability (global styles, shared components, inheritance/composition, etc) so it seemed practical and easy.
+
+This is meant to be a quick&dirty delivery, and I can certainly polish and add more sophistication. Hopefully this is what you were looking for!
+
+# Next.js docs
 
 ## Getting Started
 
