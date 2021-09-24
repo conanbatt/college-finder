@@ -8,7 +8,7 @@ This solution is "quick and dirty" given the prompt of working about 2 hours on 
 
 **Next.js**: I find next.js a more powerful framework than create-react-app for its SSR and ISR (a topic I gave a public talk about [here](https://www.youtube.com/watch?v=eXxrz4BiqSM&list=PLf9R1sIea3m2K5RkJD6zPnP0Q1t0iBs_s&index=32))
 
-**Design deviation**: The cards in the figma design have variable height. I think this is a strange decision and very conciously made them all use common flexbox to make them equal height. I think it looks better this way, unless the intention where to make a Pinterest-like Mosaic.
+**Design deviation**: The cards in the figma design have variable height. I think this is a strange design decision and very consciously made them all use common flexbox to make them equal height. I think it looks better this way, unless the intention where to make a Pinterest-like Mosaic. 
 
 **Mobile responsiveness**: For the sake of simplicity I made the design responsive only on two sizes (below and above 996px). Several techniques and decisions on how to organize the content are displayed.
 
