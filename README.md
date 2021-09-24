@@ -18,7 +18,7 @@ This solution is "quick and dirty" given the prompt of working about 2 hours on 
 
 **API**: I thought of adding a server-side api endpoint to parse CSV results, but the provided endpoint worked unrestrictedly for either search use cases or initial loading. A lot of options are available to improve performance and reliability here: caching in the server, caching in the client, cached-proxy, etc. For time constraints I just used the same endpoint over and over.
 
-**GetInitialProps**: This is a unique feature of Next.js that means the page is generated once at build time and served with the request already made. This makes it really fast to load the page and skip any loading states. However this also means the results go stale, and we would want to active [ISR](https://vercel.com/docs/concepts/next.js/incremental-static-regeneration) for it.
+**GetInitialProps**: This is a unique feature of Next.js that means the page is generated once at build time and served with the request already made. This makes it really fast to load the page and skip any loading states. However this also means the results go stale, and we would want to activate [ISR](https://vercel.com/docs/concepts/next.js/incremental-static-regeneration) for it.
 
 **CSS**: Using default css modules. The project is not large enough to decide on a pattern for reusability (global styles, shared components, inheritance/composition, etc) so it seemed practical and easy.
 
