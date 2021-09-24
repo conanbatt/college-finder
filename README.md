@@ -6,7 +6,7 @@ This solution is "quick and dirty" given the prompt of working about 2 hours on 
 
 ## Notable decisions
 
-**Next.js**: I find next.js a more powerful framework than create-react-app for its SSR and ISR (a topic I gave a public talk about [here](https://www.youtube.com/watch?v=eXxrz4BiqSM&list=PLf9R1sIea3m2K5RkJD6zPnP0Q1t0iBs_s&index=32)
+**Next.js**: I find next.js a more powerful framework than create-react-app for its SSR and ISR (a topic I gave a public talk about [here](https://www.youtube.com/watch?v=eXxrz4BiqSM&list=PLf9R1sIea3m2K5RkJD6zPnP0Q1t0iBs_s&index=32))
 
 **Design deviation**: The cards in the figma design have variable height. I think this is a strange decision and very conciously made them all use common flexbox to make them equal height. I think it looks better this way, unless the intention where to make a Pinterest-like Mosaic.
 
