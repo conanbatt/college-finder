@@ -1,6 +1,6 @@
 # YourUni
 
-I've developed this project with Next.js and the applicatio nis live on https://college-finder.vercel.app/. Instrucions on how to run the app are given at the bottom through Next.js default documentation.
+I've developed this project with Next.js and the application is live on https://college-finder.vercel.app/. Instrucions on how to run the app are given at the bottom through Next.js default documentation.
 
 This solution is "quick and dirty" given the prompt of working about 2 hours on it. The task simplicity however does not ask for much more complexity, so a short run around key decisions:
 
